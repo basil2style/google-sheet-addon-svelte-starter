@@ -1,0 +1,84 @@
+# google-sheet-addon-svelte-starter
+
+A template repository to develop a Google Sheet add-on with Svelte + Vite.
+
+## Getting Started
+
+1. Clone the repository and install npm dependencies. Please note that there are two projects that you need to install npm packages(one for the sidebar and the other one for the clasp).
+
+   ```
+   git clone https://github.com/labnol/apps-script-starter my-project
+   cd my-project
+   npm install
+   ```
+
+1. Log in and authenticate with your Google account:
+
+   ```
+
+   npm run clasp:login
+
+   ```
+
+   You can also use npx for running clasp locally
+
+1. Create a new Sheet project:
+
+   ```
+
+   npm run clasp:create
+
+   ```
+
+   Make sure that you've .clasp.json and appsscript.json files on the root folder before deploying.
+1. Deploy the project:
+
+   ```
+
+   npm run deploy
+
+   ```
+
+1. Open the project:
+
+   ```
+
+   npm run clasp:open
+
+   ```
+
+   The sidebar/dist directory contains the bundled svelte code. We will copy the index.html from the dist folder to /src using the build:post script.
+
+## .claspignore
+
+   This is similar to .gitignore. You can use this to include only the necessary files.
+
+## Test the add-on on Google Sheet
+
+Once you followed the steps above and have the Apps Script project open, the following steps explain how to test the add-on:
+
+1. Click **Extensions**, then **Select our Addon...**
+1. Select **Open** to run the HTML file.
+
+This opens the Svelte sidebar.
+
+## Sidebar development
+
+Navigate to the `sidebar` folder and develop & test the application as you would any regular Svelte application, i.e. `npm run dev`.
+
+### CSS Framework
+
+   I added Pico CSS framework for this project, but you can change it to your framework
+
+### Routing
+
+   No routing library added. Also, you can't use Sveltekit routing here.
+
+### Multiple HTML Pages
+
+   Coming Soon..
+
+## References
+
+- [CLASP - Google Apps Script tutorial](https://blog.makeinfo.co/clasp-google-apps-script-tutorial)
+- [google-docs-addon-svelte-template](https://github.com/mikenikles/google-docs-addon-svelte-template) -- Last Updated Mar 2020
