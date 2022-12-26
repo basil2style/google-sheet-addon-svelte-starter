@@ -13,7 +13,7 @@ A template repository to develop a Google Sheet add-on with Svelte + Vite.
 1. Clone the repository and install npm dependencies. Please note that there are two projects that you need to install npm packages(one for the sidebar and the other one for the clasp).
 
    ```
-   git clone https://github.com/labnol/apps-script-starter my-project
+   git clone https://github.com/basil2style/google-sheet-addon-svelte-starter my-project
    cd my-project
    npm install
    ```
