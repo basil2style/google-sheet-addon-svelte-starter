@@ -2,6 +2,12 @@
 
 A template repository to develop a Google Sheet add-on with Svelte + Vite.
 
+## Demo screenshot
+![image](https://user-images.githubusercontent.com/1285344/209518909-87a2ddaf-7cf4-4882-bea9-8326d255098a.png)
+
+![google-sheet-addon-template](https://user-images.githubusercontent.com/1285344/209519244-fc6e6c39-0dad-43c7-81cf-db7f39e79a41.gif)
+
+
 ## Getting Started
 
 1. Clone the repository and install npm dependencies. Please note that there are two projects that you need to install npm packages(one for the sidebar and the other one for the clasp).
@@ -31,6 +37,9 @@ A template repository to develop a Google Sheet add-on with Svelte + Vite.
    ```
 
    Make sure that you've .clasp.json and appsscript.json files on the root folder before deploying.
+
+   ![image](https://user-images.githubusercontent.com/1285344/209518808-4e3babda-a85e-47d3-a937-891571062e80.png)
+
 1. Deploy the project:
 
    ```
