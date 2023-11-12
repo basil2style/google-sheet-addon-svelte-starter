@@ -75,17 +75,25 @@ This opens the Svelte sidebar.
 
 Navigate to the `sidebar` folder and develop & test the application as you would any regular Svelte application, i.e. `npm run dev`.
 
+## Another addon template HTML development
+
+Settings page will open as a modal dialog in Google Sheet rather than sidebar ui. To update, you need to uncomment `defineConfig.build.rollupOptions.input.settings` line & comment out the `defineConfig.build.rollupOptions.input.main`. Because, the output build is not working in Google Sheet when combine both inputs files.
+
+Files to note:
+
+- `sidebar/src/settings.ts`
+- `sidebar/src/settings.html`
+- `sidebar/vite.config.ts`
+- `loadSettingsUI()` in `src/index.ts`
+
 ### CSS Framework
 
    I added Pico CSS framework for this project, but you can change it to your framework
 
 ### Routing
 
-   No routing library added. Also, you can't use Sveltekit routing here.
+  - [svelte-spa-router](https://github.com/ItalyPaleAle/svelte-spa-router) 
 
-### Multiple HTML Pages
-
-   Coming Soon..
 
 ## References
 
