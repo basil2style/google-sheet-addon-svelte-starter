@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Svelte + TS</title>
+    <script type="module" crossorigin>
+function a(){}function j(t){return t()}function E(){return Object.create(null)}function _(t){t.forEach(j)}function O(t){return typeof t=="function"}function P(t,e){return t!=t?e==e:t!==e||t&&typeof t=="object"||typeof t=="function"}function A(t){return Object.keys(t).length===0}function D(t,e,n){t.insertBefore(e,n||null)}function C(t){t.parentNode&&t.parentNode.removeChild(t)}function I(t){return document.createElement(t)}function M(t){return Array.from(t.childNodes)}let y;function d(t){y=t}const s=[],v=[];let i=[];const S=[],q=Promise.resolve();let p=!1;function z(){p||(p=!0,q.then(N))}function $(t){i.push(t)}const m=new Set;let u=0;function N(){if(u!==0)return;const t=y;do{try{for(;u<s.length;){const e=s[u];u++,d(e),F(e.$$)}}catch(e){throw s.length=0,u=0,e}for(d(null),s.length=0,u=0;v.length;)v.pop()();for(let e=0;e<i.length;e+=1){const n=i[e];m.has(n)||(m.add(n),n())}i.length=0}while(s.length);for(;S.length;)S.pop()();p=!1,m.clear(),d(t)}function F(t){if(t.fragment!==null){t.update(),_(t.before_update);const e=t.dirty;t.dirty=[-1],t.fragment&&t.fragment.p(t.ctx,e),t.after_update.forEach($)}}function G(t){const e=[],n=[];i.forEach(r=>t.indexOf(r)===-1?e.push(r):n.push(r)),n.forEach(r=>r()),i=e}const H=new Set;function J(t,e){t&&t.i&&(H.delete(t),t.i(e))}function K(t,e,n,r){const{fragment:c,after_update:g}=t.$$;c&&c.m(e,n),r||$(()=>{const l=t.$$.on_mount.map(j).filter(O);t.$$.on_destroy?t.$$.on_destroy.push(...l):_(l),t.$$.on_mount=[]}),g.forEach($)}function L(t,e){const n=t.$$;n.fragment!==null&&(G(n.after_update),_(n.on_destroy),n.fragment&&n.fragment.d(e),n.on_destroy=n.fragment=null,n.ctx=[])}function Q(t,e){t.$$.dirty[0]===-1&&(s.push(t),z(),t.$$.dirty.fill(0)),t.$$.dirty[e/31|0]|=1<<e%31}function R(t,e,n,r,c,g,l,B=[-1]){const h=y;d(t);const o=t.$$={fragment:null,ctx:[],props:g,update:a,not_equal:c,bound:E(),on_mount:[],on_destroy:[],on_disconnect:[],before_update:[],after_update:[],context:new Map(e.context||(h?h.$$.context:[])),callbacks:E(),dirty:B,skip_bound:!1,root:e.target||h.$$.root};l&&l(o.root);let b=!1;if(o.ctx=n?n(t,e.props||{},(f,x,...k)=>{const w=k.length?k[0]:x;return o.ctx&&c(o.ctx[f],o.ctx[f]=w)&&(!o.skip_bound&&o.bound[f]&&o.bound[f](w),b&&Q(t,f)),x}):[],o.update(),b=!0,_(o.before_update),o.fragment=r?r(o.ctx):!1,e.target){if(e.hydrate){const f=M(e.target);o.fragment&&o.fragment.l(f),f.forEach(C)}else o.fragment&&o.fragment.c();e.intro&&J(t.$$.fragment),K(t,e.target,e.anchor,e.customElement),N()}d(h)}class T{$destroy(){L(this,1),this.$destroy=a}$on(e,n){if(!O(n))return a;const r=this.$$.callbacks[e]||(this.$$.callbacks[e]=[]);return r.push(n),()=>{const c=r.indexOf(n);c!==-1&&r.splice(c,1)}}$set(e){this.$$set&&!A(e)&&(this.$$.skip_bound=!0,this.$$set(e),this.$$.skip_bound=!1)}}function U(t){let e;return{c(){e=I("main"),e.textContent="Settings Page Demo"},m(n,r){D(n,e,r)},p:a,i:a,o:a,d(n){n&&C(e)}}}class V extends T{constructor(e){super(),R(this,e,null,U,P,{})}}new V({target:document.getElementById("app")});
+
+</script>
+    <style>
+:root{font-family:Inter,Avenir,Helvetica,Arial,sans-serif;font-size:16px;line-height:24px;font-weight:400;color-scheme:light dark;color:#ffffffde;background-color:#242424;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-text-size-adjust:100%}a{font-weight:500;color:#646cff;text-decoration:inherit}a:hover{color:#535bf2}body{margin:0;display:flex;place-items:center;min-width:320px;min-height:100vh}h1{font-size:3.2em;line-height:1.1}.card{padding:2em}#app{max-width:1280px;margin:0 auto;padding:2rem;text-align:center}button{border-radius:8px;border:1px solid transparent;padding:.6em 1.2em;font-size:1em;font-weight:500;font-family:inherit;background-color:#1a1a1a;cursor:pointer;transition:border-color .25s}button:hover{border-color:#646cff}button:focus,button:focus-visible{outline:4px auto -webkit-focus-ring-color}@media (prefers-color-scheme: light){:root{color:#213547;background-color:#fff}a:hover{color:#747bff}button{background-color:#f9f9f9}}
+
+</style>
+  </head>
+  <body>
+    <div id="app"></div>
+    
+  </body>
+</html>

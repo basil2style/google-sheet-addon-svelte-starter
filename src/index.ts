@@ -62,3 +62,15 @@ const showSidebar = () => {
 // const include = (filename: string) =>
 //   HtmlService.createHtmlOutputFromFile(filename).getContent();
 
+/**
+ *
+ * @param filename
+ * @returns
+ */
+const loadSettingsUI = () => {
+  const htmlSev = HtmlService.createTemplateFromFile("src/settings");
+  const html = htmlSev.evaluate();
+  html.setWidth(650).setHeight(400);
+  const ui = SpreadsheetApp.getUi();
+  ui.showModalDialog(html, "Settings Page");
+};
